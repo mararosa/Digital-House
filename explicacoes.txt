@@ -1,0 +1,37 @@
+**
+
+    n = int(input())
+
+arr = list(map(int, input().split()))
+
+listnew=[]
+
+for i in arr:
+
+     if i not in listnew:
+
+                listnew.append(i)
+
+listnew.sort(reverse=True)
+
+print(listnew[1])**
+1st we are getting size of the array from the user (but we re not gonna use it anyway) then we are getting the elements of the array it is to be noted that all the elements are in a single line seperated by "space"
+
+arr=list(map(int, input().split()))
+
+what this code does is that it takes the input and by default ".split()" method split the input with respect to space if you want any other insted like comma "," of spce you can specify it like this " input().split(",") " .since the input function always returns a string to convert the string to int we use map . map is just like a loop it takes value after comma and force it to change it type with what we specify before comma. "map(what to do the value,value)" .finally we are taking all those mappped int value and putting it inside a list.
+
+**
+
+listnew=[]
+
+for i in arr:
+
+  if i not in listnew:
+
+         listnew.append(i)
+listnew.sort(reverse=True)
+
+print(listnew[1]) **
+
+we are creating a new list "listnew" you will know why we have created it later . now we are taking all the values in arr and assaigning it to i from begning using a for loop now if i is not in new list we are appending the value of i to new list we are doing this to eliminate duplicate values the last two lines are used to reverse the list so that the 1st number will be the winner score and we print " listnew[1] " which is the runner up score
